@@ -1,0 +1,32 @@
+
+{%extends 'indexkudumbasree.html'%}
+{%block body%}
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <div align="center">
+    <table width="200" border="0" class="table">
+      <tr>
+        <td colspan="5"> <div align="center">VIEW REQUEST </div></td>
+      </tr>
+      <tr>
+        <td>NAME</td>
+        <td>WORK</td>
+        <td>REQUEST DATE</td>
+
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        {%for i in val%}
+        <td>{{i[0]}} {{i[1]}}</td>
+        <td>{{i[3]}} {{i[4]}}</td>
+        <td>{{i[8]}}</td>
+        <td><p><a href="/acceptreq?id={{i[6]}}">ACCEPT</a></p>
+        <p><a href="/rejectreq?id={{i[6]}}">REJECT</a></p></td>
+      </tr>
+      {%endfor%}
+      </table>
+  </div>
+</form>
+</body>
+{%endblock%}

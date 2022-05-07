@@ -1,0 +1,28 @@
+{% extends 'indexadmin.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <div align="center">
+    <table width="461" height="185" border="1" class="table">
+      <tr>
+        <td colspan="4"><div align="center">VIEW COMPLAINTS </div></td>
+      </tr>
+      <tr>
+        <td>USER</td>
+        <td>COMPLAINTS</td>
+        <td>DATE</td>
+        <td>&nbsp;</td>
+      </tr>
+      {%for i in val%}
+      <tr>
+        <td>{{i[5]}} {{i[6]}}</td>
+        <td>{{i[1]}}&nbsp;</td>
+        <td>{{i[3]}}&nbsp;</td>
+        <td><a href="SENDREPLY?id={{i[0]}}">REPLY</a></td>
+      </tr>
+      {%endfor%}
+      </table>
+  </div>
+</form>
+</body>
+{%endblock%}

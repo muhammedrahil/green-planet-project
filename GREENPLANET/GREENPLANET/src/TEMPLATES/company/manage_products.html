@@ -1,0 +1,33 @@
+
+{%extends 'indexcompany.html'%}
+{%block body%}
+<body>
+<form id="form1" name="form1" method="post" action="/add_product">
+  <table width="598" height="111" border="0" class="table">
+    <thead class="thead-dark">
+    <tr  bgcolor="#18d26e">>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Photo</th>
+      <th scope="col">&nbsp;</th>
+      <th scope="col">&nbsp;</th>
+    </tr>
+    </thead>
+    {% for i in val %}
+    <tr>
+      <td>{{i[1]}}</td>
+      <td>&nbsp;{{i[2]}}</td>
+      <td>{{i[4]}}</td>
+      <td>&nbsp;<img src="./static/files/{{i[3]}}" alt="" hieght="80" width="80"/></td>
+      <td><a href="/edit_product?id={{i[0]}}">edit</a></td>
+       <td><a href="/delete_product?id={{i[0]}}">Delete</a></td>
+    </tr>
+    {% endfor %}
+  </table><label>
+  <input type="submit" value="Add new" class="btn btn-success btn-lg btn-block"/>
+</label>
+</form>
+</body>
+{%endblock%}

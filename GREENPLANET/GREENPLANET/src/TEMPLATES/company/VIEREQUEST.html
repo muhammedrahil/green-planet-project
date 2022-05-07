@@ -1,0 +1,30 @@
+{%extends 'indexcompany.html'%}
+{%block body%}
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <div align="center">
+    <table width="200" border="1" class="table">
+      <tr>
+        <td colspan="5"> <div align="center">VIEW REQUEST </div></td>
+      </tr>
+      <tr>
+        <td>USER NAME</td>
+        <td>ASSIGN AREA</td>
+        <td> REQUEST DATE</td>
+
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        {% for i in val%}
+        <td>{{i[1]}} {{i[2]}}</td>
+        <td>{{i[22]}}</td>
+        <td>{{i[13]}}</td>
+        <td><p><a href="aaceptwreq?id={{i[10]}}">ACCEPT</a></p>
+        <p><a href="rejectwreq?id={{i[10]}}">REJECT</a></p></td>
+      </tr>
+      {%endfor%}
+      </table>
+  </div>
+</form>
+</body>
+{%endblock%}

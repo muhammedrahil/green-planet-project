@@ -1,0 +1,28 @@
+{%extends 'indexcompany.html'%}
+{%block body%}
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="597" height="112" border="0" class="table">
+    <thead class="thead-dark">
+    <tr  bgcolor="#18d26e">
+    <tr>
+      <th scope="col">Name</th>
+
+      <th scope="col">bill date </th>
+      <th scope="col">Amount</th>
+      <th></th>
+    </tr>
+    {% for i in val %}
+    <tr>
+      <td>&nbsp;{{i[5]}}{{i[6]}}</td>
+      <td>{{i[2]}}</td>
+      <td>&nbsp;{{i[3]}}</td>
+
+      <td><a href="viewmore?id={{i[0]}}">view product</a>  </td>
+    </tr>
+    {% endfor %}
+  </table>
+</form>
+</body>
+{%endblock%}

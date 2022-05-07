@@ -1,0 +1,49 @@
+{%extends 'indexcompany.html'%}
+{%block body%}
+<body>
+<form id="form1" name="form1" method="post" action="addpricechart" enctype="multipart/form-data">
+  <div align="center">
+
+    <table width="200" border="1" class="table">
+      <tr>
+        <td><input type="file" name = "video" value="video"
+		/></td>
+      </tr>
+    </table>
+    <table width="200" border="1">
+      <tr>
+        <td>type</td>
+        <td><label>
+          <select name="select">
+            <option>recycle</option>
+            <option>non recycle</option>
+          </select>
+        </label></td>
+      </tr>
+    </table>
+    <p>
+      <label>
+      <input type="submit" name="Submit" value="SAVE" />
+      </label>
+</p>
+  </div>
+</form>
+
+    <table width="200" border="1" align="center">
+      <tr>
+        <td>type</td>
+        <td>price chart</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        {%for i in val%}
+        <td>&nbsp;{{i[1]}}</td>
+        <td>&nbsp;<a href="./static/chart/{{i[2]}}">{{i[2]}}</a></td>
+        <td><a href="/delchart?id={{i[0]}}">DELETE</a></td>
+      </tr>
+      {%endfor%}
+      </table>
+
+</body>
+</html>
+{%endblock%}

@@ -1,0 +1,36 @@
+
+{% extends 'indexadmin.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="/KUDUMBASREEREG">
+  <div align="center">
+    <table width="557" height="170" border="1" class="table">
+      <tr>
+
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>place</td>
+        <td>post</td>
+        <td>pin</td>
+        <td>phone</td>
+        <td></td>
+
+      </tr>
+      {%for i in val%}
+      <tr>
+        <td>&nbsp;{{i[2]}}</td>
+        <td>&nbsp;{{i[3]}}</td>
+        <td>&nbsp;{{i[4]}}</td>
+        <td>&nbsp;{{i[5]}}</td>
+        <td>{{i[6]}}</td>
+        <td><a href="/editk?id={{i[0]}}">edit</a>
+        <a href="deletek?id={{i[0]}}">delete</a> </td>
+      </tr>
+      {%endfor%}
+      </table>
+  </div>
+  <p align="center"><input type="submit" value="add" /></p>
+</form>
+</body>
+{%endblock%}

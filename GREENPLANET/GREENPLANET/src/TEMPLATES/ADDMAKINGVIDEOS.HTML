@@ -1,0 +1,47 @@
+
+{% extends 'indexadmin.html' %}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="addvideo" enctype="multipart/form-data">
+  <div align="center">
+    <p>ADD MAKING VIDEOS  </p>
+    <table width="200" border="1" class="table">
+      <tr>
+        <td><input type="file" name = "video" value="video" required
+		/></td>
+      </tr>
+    </table>
+    <table width="200" border="1" class="table">
+      <tr>
+        <td>DESCRIPTION</td>
+        <td><label>
+          <textarea name="textarea" required></textarea>
+        </label></td>
+      </tr>
+    </table>
+    <p>
+      <label>
+      <input type="submit" name="Submit" value="SAVE" />
+      </label>
+</p>
+  </div>
+</form>
+
+    <table width="200" border="1" align="center" class="table">
+      <tr>
+        <td>title</td>
+        <td>video</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        {%for i in val%}
+        <td>&nbsp;{{i[1]}}</td>
+        <td>&nbsp;<a href="./static/video/{{i[2]}}">{{i[2]}}</a></td>
+        <td><a href="/delvideo?id={{i[0]}}">DELETE</a></td>
+      </tr>
+      {%endfor%}
+      </table>
+
+</body>
+{%endblock%}

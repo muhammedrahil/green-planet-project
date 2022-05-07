@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.greenplanet" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GreenPlanet"
+        android:usesCleartextTraffic="true" >
+        <activity android:name=".add_feedback"/>
+        <activity android:name=".View_user_request_work"/>
+        <activity android:name=".pricechart"/>
+        <activity
+            android:name=".bill_items"
+            android:exported="true" />
+        <activity
+            android:name=".Agent_bill"
+            android:exported="true" />
+        <activity
+            android:name=".viewmoew"
+            android:exported="true" />
+        <activity
+            android:name=".product_bill"
+            android:exported="true" />
+        <activity
+            android:name=".my_request_status"
+            android:exported="true" />
+        <activity
+            android:name=".View_class_details"
+            android:exported="true" />
+        <activity
+            android:name=".custom2"
+            android:exported="true" />
+        <activity
+            android:name=".custom4"
+            android:exported="true" />
+        <activity
+            android:name=".custom3"
+            android:exported="true" />
+        <activity
+            android:name=".View_work_details"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".view_complaint"
+            android:exported="true" />
+        <activity
+            android:name=".vehicle_home"
+            android:exported="true" />
+        <activity
+            android:name=".Organize_class"
+            android:exported="true" />
+        <activity
+            android:name=".Organize_training"
+            android:exported="true" />
+        <activity
+            android:name=".ipset"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Customer_home"
+            android:exported="true" />
+        <activity
+            android:name=".Add_pickup_point"
+            android:exported="true" />
+        <activity
+            android:name=".View_notification"
+            android:exported="true" />
+        <activity
+            android:name=".View_user_request"
+            android:exported="true" />
+        <activity
+            android:name=".Cash_entry"
+            android:exported="true" />
+        <activity
+            android:name=".View_route"
+            android:exported="true" />
+        <activity
+            android:name=".Order_Product"
+            android:exported="true" />
+        <activity
+            android:name=".View_product"
+            android:exported="true" />
+        <activity
+            android:name=".Attend_class"
+            android:exported="true" />
+        <activity
+            android:name=".view_billing"
+            android:exported="true" />
+        <activity
+            android:name=".View_pickup_point"
+            android:exported="true" />
+        <activity
+            android:name=".view_reply"
+            android:exported="true" />
+        <activity
+            android:name=".add_complaint"
+            android:exported="true" />
+        <activity
+            android:name=".login"
+            android:exported="true" />
+        <activity
+            android:name=".register"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <service android:name=".LocactionService" />
+    </application>
+
+</manifest>

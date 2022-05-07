@@ -1,0 +1,40 @@
+
+{%extends 'indexcompany.html'%}
+{%block body%}
+<body>
+<form action="/update_product1" method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <table width="574" height="190" border="1" class="table">
+    <tr>
+      <th scope="row">Name</th>
+      <td><label>
+        <input type="text" name="textfield" value="{{s[1]}}" required pattern="[A-Z a-z.]{2,25}"/>
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row"><p>Discription</p>      </th>
+      <td><label>
+        <textarea name="textarea" required>{{s[2]}}</textarea>
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Amount</th>
+      <td><label>
+        <input type="text" name="textfield2" value="{{s[4]}}" required pattern="[0-9]{1,}"/>
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Choose file </th>
+      <td><label>
+        <input type="file" name="file" value="{{s[3]}}" />
+      </label></td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row"><label>
+        <input type="submit" name="Submit" value="Update" class="btn btn-success btn-lg btn-block"/>
+      </label></th>
+    </tr>
+  </table>
+</form>
+</body>
+
+{%endblock%}

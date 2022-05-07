@@ -1,0 +1,38 @@
+{%extends 'indexkudumbasree.html'%}
+{%block body%}
+
+<body>
+<form id="form1" name="form1" method="post" action="/insertwork">
+  <div align="center">
+    <table width="200" border="0" class="table">
+      <tr>
+        <td colspan="2"><div align="center">ADD WORK </div></td>
+      </tr>
+      <tr>
+        <td>WORK</td>
+        <td><label>
+          <input type="text" name="textfield" required />
+        </label></td>
+      </tr>
+      <tr>
+        <td>DESCRIPTION</td>
+        <td><label>
+          <textarea name="textarea" required></textarea>
+        </label></td>
+      </tr>
+
+      <tr>
+        <td colspan="2"><label>
+          <div align="center">
+            <input type="submit" name="Submit" value="SAVE" />
+            </div>
+        </label></td>
+      </tr>
+      </table>
+
+
+
+  </div>
+</form>
+</body>
+{%endblock%}

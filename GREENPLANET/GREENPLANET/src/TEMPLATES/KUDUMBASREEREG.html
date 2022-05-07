@@ -1,0 +1,65 @@
+{% extends 'indexadmin.html' %}
+{% block body %}
+
+<body>
+<div align="center">
+  <form id="form2" name="form2" method="post" action="addkudumbasree">
+  <table width="200" border="1" class="table">
+    <tr>
+      <td colspan="2">KUDUMBASREE REGISTRATION </td>
+    </tr>
+    <tr>
+      <td>NAME</td>
+      <td>
+        <label>
+          <input type="text" name="textfield" required pattern="[A-Z a-z.]{3,25}" />
+          </label>
+      </form>      </td>
+    </tr>
+    <tr>
+      <td>PLACE</td>
+      <td><label>
+        <input type="text" name="textfield2" required pattern="[A-Z a-z.]{3,25}" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>POST</td>
+      <td><label>
+        <input type="text" name="textfield3" required pattern="[A-Z a-z.]{3,25}" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>PIN</td>
+      <td><label>
+        <input type="text" name="textfield4" required pattern="[0-9]{6}"  />
+      </label></td>
+    </tr>
+    <tr>
+      <td>PHONE NO </td>
+      <td><label>
+        <input type="text" name="textfield5" required pattern="[6789][0-9]{9}" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>USER NAME </td>
+      <td><label>
+        <input type="text" name="textfield6" required />
+      </label></td>
+    </tr>
+    <tr>
+      <td>PASSWORD</td>
+      <td><label>
+        <input type="password" name="textfield7" required />
+      </label></td>
+    </tr>
+    <tr>
+      <td colspan="2"><label>
+        <div align="center">
+          <input type="submit" name="Submit" value="SAVE" />
+        </div>
+      </label></td>
+    </tr>
+  </table>
+</div>
+</body>
+{%endblock%}

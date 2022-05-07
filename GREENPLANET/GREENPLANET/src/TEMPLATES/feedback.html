@@ -1,0 +1,30 @@
+
+{% extends 'indexadmin.html' %}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <div align="center">
+  <table width="274" border="1" class="table">
+    <tr>
+
+    </tr>
+    <tr>
+      <td width="59">Name</td>
+      <td width="59">feedback</td>
+      <td width="64">Date</td>
+
+    </tr>
+    <tr>
+      {%for i in val%}
+      <td>&nbsp;{{i[4]}} {{i[5]}}</td>
+      <td>&nbsp;{{i[3]}}</td>
+      <td>&nbsp;{{i[1]}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  </div>
+</form>
+</body>
+</html>
+{%endblock%}

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:text="Add pickup points"
+            app:backgroundTint="#235102" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:text="PRICE CHART"
+            app:backgroundTint="#235102" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:text="Waste Billing"
+            app:backgroundTint="#235102" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:text="View product"
+            app:backgroundTint="#235102" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:text="product Billing"
+            app:backgroundTint="#235102" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:text="Krishibhavan Notification"
+            app:backgroundTint="#235102" />
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:text="kudumbasree work"
+            app:backgroundTint="#235102" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:text="my request status"
+            app:backgroundTint="#235102" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:text="Complaint"
+            app:backgroundTint="#235102" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:text="Reply"
+            app:backgroundTint="#235102" />
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:text="feedback"
+            app:backgroundTint="#235102" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="255dp"
+            android:layout_height="60dp"
+            android:text="logout"
+            app:backgroundTint="#13856E" />
+    </TableRow>
+</LinearLayout>

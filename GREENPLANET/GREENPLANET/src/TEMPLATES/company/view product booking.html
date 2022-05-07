@@ -1,0 +1,32 @@
+
+{%extends 'indexcompany.html'%}
+{%block body%}
+<body>
+<form id="form1" name="form1" method="post" action="/acceptbooking">
+  <table width="598" height="111" border="0" class="table">
+    <thead class="thead-dark">
+    <tr  bgcolor="#18d26e">>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Photo</th>
+
+
+    </tr>
+    </thead>
+    {% for i in val %}
+    <tr>
+      <td>{{i[1]}}</td>
+      <td>&nbsp;{{i[2]}}</td>
+      <td>{{i[8]}}</td>
+      <td>&nbsp;<img src="./static/files/{{i[3]}}" alt="" hieght="80" width="80"/></td>
+
+
+    </tr>
+    {% endfor %}
+  </table><label>
+  <input type="submit" value="ACCEPT BOOKING" class="btn btn-success btn-lg btn-block"/>
+</label>
+</form>
+{%endblock%}

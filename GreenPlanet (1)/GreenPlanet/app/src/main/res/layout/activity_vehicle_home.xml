@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="255dp"
+            android:layout_height="81dp"
+            android:text="USER REQUEST"
+            app:backgroundTint="#0F6558" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="255dp"
+            android:layout_height="65dp"
+            android:text="PRICE CHART"
+            app:backgroundTint="#0F6558" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button24"
+            android:layout_width="255dp"
+            android:layout_height="65dp"
+            android:text="VIEW ASSIGN AREA"
+            app:backgroundTint="#0F6558" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button26"
+            android:layout_width="255dp"
+            android:layout_height="65dp"
+            android:text="LOGOUT"
+            app:backgroundTint="#13856E" />
+    </TableRow>
+</LinearLayout>

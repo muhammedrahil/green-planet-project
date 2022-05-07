@@ -1,0 +1,41 @@
+{% extends 'indexadmin.html' %}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="/sentnotification">
+  <div align="center">
+    <table width="200" border="0" class="table">
+      <tr>
+        <td>Notification</td>
+        <td><label>
+          <textarea name="textfield" required ></textarea>
+        </label></td>
+      </tr>
+      <tr>
+        <td colspan="2"><label>
+          <div align="center">
+            <input type="submit" name="Submit" value="ADD" />
+          </div>
+        </label></td>
+      </tr>
+      </table>
+  </div>
+</form>
+
+    <table width="200" border="1" align="center" class="table">
+      <tr>
+        <td>date</td>
+        <td>notification</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        {%for i in val%}
+        <td>&nbsp;{{i[2]}}</td>
+        <td>&nbsp;{{i[1]}}</td>
+        <td><a href="/delnoti?id={{i[0]}}">DELETE</a></td>
+      </tr>
+      {%endfor%}
+      </table>
+
+</body>
+{%endblock%}

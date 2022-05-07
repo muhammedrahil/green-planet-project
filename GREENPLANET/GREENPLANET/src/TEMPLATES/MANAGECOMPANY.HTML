@@ -1,0 +1,42 @@
+
+{% extends 'indexadmin.html' %}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="COMPANYREG#about">
+  <div align="center">
+    <table width="220" border="1" class="table">
+      <tr>
+        <td colspan="7"><div align="center">MANAGE COMPANY </div></td>
+      </tr>
+      <tr>
+        <td width="22">COMPANY NAME </td>
+        <td width="22">PLACE</td>
+        <td width="22">POST</td>
+        <td width="22">PIN</td>
+        <td width="22">EMAIL</td>
+        <td width="22">PHONE</td>
+        <td width="42">&nbsp;</td>
+      </tr>
+      {%for i in val%}
+      <tr>
+        <td>{{i[2]}}</td>
+        <td>&nbsp;{{i[3]}}</td>
+        <td>{{i[4]}}&nbsp;</td>
+        <td>{{i[5]}}&nbsp;</td>
+        <td>{{i[7]}}&nbsp;</td>
+        <td>{{i[6]}}&nbsp;</td>
+        <td><p align="center"><a href="/editc?id={{i[1]}}">EDIT</a></p>
+        <p align="center"><a href="/deletec?id={{i[1]}}" onClick="return confirm('Are you sure ?')">DELETE</a></p></td>
+      </tr>
+      {%endfor%}
+      </table>
+    <p>
+      <label>
+      <input type="submit" name="Submit" value="ADD NEW" />
+      </label>
+    </p>
+  </div>
+</form>
+</body>
+{%endblock%}

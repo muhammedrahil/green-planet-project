@@ -1,0 +1,39 @@
+{%extends 'indexcompany.html'%}
+{%block body%}
+
+<body>
+<form action="/add_product1" method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <table width="574" height="190" border="0"class="table">
+    <tr>
+      <th scope="row">Name</th>
+      <td><label>
+        <input type="text" name="textfield" required/>
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row"><p>Description</p>      </th>
+      <td><label>
+        <textarea name="textarea" required></textarea>
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Amount</th>
+      <td><label>
+        <input type="text" name="textfield2" required/>
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Choose file </th>
+      <td><label>
+        <input type="file" name="file" required />
+      </label></td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row"><div align="center"><label>
+        <input type="submit" name="Submit" value="Add"  class="btn btn-success btn-lg btn-block"/>
+      </label></div></th>
+
+    </tr>
+  </table>
+</form>
+{%endblock%}

@@ -1,0 +1,29 @@
+
+{% extends 'indexadmin.html' %}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="reply">
+  <div align="center">
+    <table width="200" border="1">
+      <tr>
+        <td><div align="center">SEND REPLY </div></td>
+      </tr>
+      </table>
+    <table width="200" border="1">
+      <tr>
+        <td>REPLY</td>
+        <td><label>
+          <textarea name="textarea"></textarea>
+        </label></td>
+      </tr>
+    </table>
+    <p>
+      <label>
+      <input type="submit" name="Submit" value="SEND" />
+      </label>
+    </p>
+  </div>
+</form>
+</body>
+{%endblock%}

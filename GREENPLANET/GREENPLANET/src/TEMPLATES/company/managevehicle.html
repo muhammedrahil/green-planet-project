@@ -1,0 +1,33 @@
+{%extends 'indexcompany.html'%}
+{%block body%}
+
+<body>
+<form id="form1" name="form1" method="post" action="/vehicleregistration">
+  <div align="center">
+    <table width="557" height="170" border="1" class="table">
+      <tr>
+
+      </tr>
+      <tr>
+        <td>Model</td>
+        <td>Vehicle NO</td>
+        <td>Phone</td>
+        <td></td>
+
+      </tr>
+      {%for i in val%}
+      <tr>
+        <td>&nbsp;{{i[1]}}</td>
+        <td>&nbsp;{{i[2]}}</td>
+        <td>&nbsp;{{i[3]}}</td>
+        <td>
+        <a href="delv?id={{i[0]}}">delete</a> </td>
+      </tr>
+      {%endfor%}
+      </table>
+  </div>
+  <p align="center"><input type="submit" value="add" /></p>
+</form>
+</body>
+
+{%endblock%}
